@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>trivia game</title>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+		<div id="timeArea"><small>time remaining: <span id="remainingTime">30</span>second</small></div>
+  <div class="container">
+  			<h1 id="hh">Totally Trivial Trivia!</h1>
+  			<form name="quiz" method="post" name="buttons" id="form" onsubmit="return totalVal()">
+
+			<li><div class="question">When was javascript created?</div></li>
+			<input id="answer" type="radio" name="group1" value="wrong"> 1996<br>
+			<input id="answer" type="radio" name="group1" value="wrong"> 1992<br>
+			<input id="answer" type="radio" name="group1" value="correct"> 1995<hr>
+
+			<li><div class="question">Who created php?</div></li>
+			<input id="answer" type="radio" name="group2" value="wrong">Brebdan Eich<br>
+			<input id="answer" type="radio" name="group2" value="wrong">peter burgh<br>
+			<input id="answer" type="radio" name="group2" value="correct">Rasmus Lerdorf<hr>
+
+			<li><div class="question">When was google founded?</div></li>
+			<input id="answer" type="radio" name="group3" value="wrong">1997<br>
+			<input id="answer" type="radio" name="group3" value="wrong"> 1994<br>
+			<input id="answer" type="radio" name="group3" value="correct" >1998<hr>
+
+			<button class="submit" onclick="showTotalvalue();" type="submit">Submit</button></div>
+	</div>
+	
+</body>
+</html>
